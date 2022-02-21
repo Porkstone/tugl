@@ -30,19 +30,28 @@
         a:active {
           color: white;
         }
+      .container {
+          display: grid | inline-grid;
+          grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+          grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+        }
+      .item-a {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
 
     </style>
   </head>
   <body>
     <h1>Temporal User Group - London</h1>
-      <p>
+      <div class="item-a">
         The group aims to support engineers working with Temporal. 
         If you are interested in learning and sharing your knowledge about working with <a href="https://Temporal.io"> then this is the group for you.
-      </p>
-      <p>
+      </div>
+      <div>
         Currently we are aiming to meetup in person once a month, somewhere in the Kings Cross area.
         The next meeting is schedule for 17th March 2022.
-      </p>
+      </div>
     <link rel="stylesheet" href="styles.css">
   </body>
 </html>
